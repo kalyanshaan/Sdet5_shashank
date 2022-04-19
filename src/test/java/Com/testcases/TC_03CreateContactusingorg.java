@@ -55,13 +55,6 @@ public class TC_03CreateContactusingorg extends BaseClass {
 		}
 	}
 
-		//if(fname.equals(contactname)) {
-			//System.out.println("TC Pass");
-		//}
-		//else {
-			//System.out.println("TC Fail");
-		//}
-	//}
 
 	@Test(groups="smoke")
 	public void createcontact() throws InterruptedException, IOException

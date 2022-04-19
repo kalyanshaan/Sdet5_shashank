@@ -18,7 +18,9 @@ public class LoginPage {
 		WebDriver driver;
 		
 		public LoginPage(WebDriver driver) {
-			PageFactory.initElements(driver,this);
+			//this.driver=driver;
+			PageFactory.initElements(driver, this);
+			
 		}
 
 		//Rule-2:Indentify all the elements by using findBy,findBys,findall

@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class PropFile_Util {
-	public String readdatafrompropfile(String key) throws IOException 
+	public static  String readdatafrompropfile(String key) throws IOException 
 	{
 		FileInputStream fis = new FileInputStream(IAutoConstant.popfilepath);
 		Properties prop = new Properties();

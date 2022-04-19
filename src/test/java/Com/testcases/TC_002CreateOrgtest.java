@@ -3,6 +3,8 @@ package Com.testcases;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
 import com.generic.BaseClass;
@@ -33,13 +35,15 @@ public class TC_002CreateOrgtest extends BaseClass {
 		orgINfoPAge.searchforOrg(orgname, "accountname");
 
 		String actual_orgname=	driver.findElement(By.xpath("//a[@title='Organizations']")).getText();
-
-		if(actual_orgname.equals(orgname)) 
 		{
-			System.out.println("TC Passed");	
-		}
-		else {
-			System.out.println("FAil");
+			AssertJUnit.assertEquals(actual_orgname, "orgname");
+
+		//if(actual_orgname.equals(orgname)) 
+		//{
+		//	System.out.println("TC Passed");	
+		//}
+		//else {
+		//	System.out.println("FAil");
 		}	
 
 	}
@@ -67,13 +71,16 @@ public class TC_002CreateOrgtest extends BaseClass {
 		orgINfoPAge.searchforOrg(orgname, "accountname");
 
 		String actual_orgname=	driver.findElement(By.xpath("//a[@title='Organizations']")).getText();
-
-		if(actual_orgname.equals(orgname)) 
 		{
-			System.out.println("TC Passed");	
-		}
-		else {
-			System.out.println("FAil");
+			Assert.assertEquals(actual_orgname, orgname);
+
+
+	//	if(actual_orgname.equals(orgname)) 
+		//{
+		//	System.out.println("TC Passed");	
+		//}
+		//else {
+		//	System.out.println("FAil");
 		}	
 	}
 
