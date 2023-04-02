@@ -4,8 +4,8 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="Com.testcases.Tc_001CreateOrg"/>
-     
-    
+      <class name="Com.testcases.TC_002CreateOrgtest"/>
+      <class name="Com.testcases.TC_03CreateContactusingorg"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

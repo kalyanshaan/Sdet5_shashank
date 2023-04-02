@@ -56,7 +56,7 @@ public class OrgInfoPage {
 	@FindBy(xpath="//table[@class=\"lvt small\"]//tr[3]//input[@name=\"selected_id\" and @type=\"checkbox\"]")
 	private WebElement firstcheckbox;
 	
-	@FindBy(xpath="//input[@class=\"crmbutton small delete\"]")
+	@FindBy(xpath="//input[@class='crmbutton small delete']")
 	private WebElement deletebtn;
 	
 	public WebElement getDeletebtn() {

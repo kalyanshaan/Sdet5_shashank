@@ -3,18 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Com.testcases.Tc_001CreateOrg">
+      <class name="Com.testcases.TC_002CreateOrgtest">
         <methods>
           <include name="beforeclass"/>
           <include name="afterSuite"/>
           <include name="afterClass"/>
-          <include name="createorgwithDDTest"/>
+          <include name="createorgwithmobilenoTest"/>
           <include name="logout"/>
           <include name="bs"/>
-          <include name="deleteOrgTest"/>
           <include name="logintoVtiger"/>
         </methods>
-      </class> <!-- Com.testcases.Tc_001CreateOrg -->
+      </class> <!-- Com.testcases.TC_002CreateOrgtest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

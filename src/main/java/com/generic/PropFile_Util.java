@@ -3,7 +3,11 @@ package com.generic;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
-
+/**
+ * 
+ * @author Kalyankar Shashank
+ *
+ */
 public class PropFile_Util {
 	public static  String readdatafrompropfile(String key) throws IOException 
 	{

@@ -25,7 +25,7 @@ public class HomePage {
 		
 		//Rule-2:Indentify all the elements by using findBy,findBys,findall
 		
-		@FindBy(xpath="//img[@alt='Create Organization...']")
+		@FindBy(xpath="//a[text()='Organizations']")
 		private WebElement getorglnk;
 		
 

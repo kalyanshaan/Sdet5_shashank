@@ -36,7 +36,7 @@ public class TC_002CreateOrgtest extends BaseClass {
 
 		String actual_orgname=	driver.findElement(By.xpath("//a[@title='Organizations']")).getText();
 		{
-			AssertJUnit.assertEquals(actual_orgname, "orgname");
+			AssertJUnit.assertEquals(actual_orgname, "tyss");
 
 		//if(actual_orgname.equals(orgname)) 
 		//{
@@ -74,14 +74,8 @@ public class TC_002CreateOrgtest extends BaseClass {
 		{
 			Assert.assertEquals(actual_orgname, orgname);
 
-
-	//	if(actual_orgname.equals(orgname)) 
-		//{
-		//	System.out.println("TC Passed");	
-		//}
-		//else {
-		//	System.out.println("FAil");
-		}	
+		}
+	
 	}
 
 }

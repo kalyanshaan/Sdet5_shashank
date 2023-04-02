@@ -43,8 +43,8 @@ public class Tc_001CreateOrg extends BaseClass{
 
 		homePage.getorglnk().click();
 
-		//OrgInfoPage.getSearchorgbtn(orgname,"accountname");
-		OrgInfoPage.searchforOrg(orgname, "accountname");
+		OrgInfoPage.searchforOrg(orgname,"accountname");
+	
 
 		Thread.sleep(3000);
 
@@ -89,9 +89,10 @@ public class Tc_001CreateOrg extends BaseClass{
 
 		orgINfoPAge.getDeletebtn().click();
 
-		//driverUtils.acceptAlert();
+		driverUtils.acceptAlert();
+		
 
-		//		driverUtils.waitforelement(orgINfoPAge.getnoOrgfound());
+		//driverUtils.waitforelement(orgINfoPAge.getnoOrgfound());
 
 		String msg= orgINfoPAge.getnoOrgfound().getText();
 
